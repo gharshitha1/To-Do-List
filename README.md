@@ -1,7 +1,7 @@
 # To-Do List Application
 
 ## Description
-The **To-Do List Application** is a task management tool designed to help users organize and track their tasks efficiently. Built using **HTML**, **CSS**, **JavaScript**, and **Local Storage**, this application provides a user-friendly interface with seamless functionality for managing daily tasks. The use of Local Storage ensures that tasks persist even after refreshing the page, making it a reliable and practical productivity tool.
+The **To-Do List Application** is a task management tool designed to help users organize and track their tasks efficiently. Built using **HTML**, **CSS**, **JavaScript**, and **Local Storage**, this application provides a user-friendly interface with seamless functionality for managing daily tasks. The use of Local Storage ensures that tasks persist even after refreshing the page, making it a reliable and practical productivity application.
 
 ---
 
