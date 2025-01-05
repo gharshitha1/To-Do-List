@@ -1,0 +1,122 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    font-weight: 900;
+    font-style: italic;
+}
+body{
+    background-image: url(https://media.istockphoto.com/id/1249796491/photo/on-a-wooden-table-lies-a-lilac-and-a-notepad-a-hand-with-a-pen-over-the-notebook.jpg?s=612x612&w=0&k=20&c=9lcP7p_KIB6bAnwYIclT8ZVV-SiuQaFN71fl0tBDrsY=);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    padding: 10px;
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: rgba(0, 0, 0, 0.215);
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    margin-left: 380px;
+    border-radius: 10px;
+    margin-top: 70px;
+    border: 2px solid #8d0851c0 ;
+}
+.todo-app h2{
+    font-size: 45px;
+    color: white;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0 ;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background:transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border:none;
+    outline:none;
+    padding: 16px 50px;
+    background: #8d0851c0;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 22px;
+    color: #fff;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:' ';
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50px;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+}
+ul li.checked{
+    color:#fff;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBL4RRy72A-iOOut20c92_Ad57Jkn0ebf1g&s);
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height: 40px;
+    font-size: 22px;
+    color:black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+.overlay {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 13, 10, 0.269); 
+    pointer-events: none;
+}
